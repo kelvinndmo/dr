@@ -9,7 +9,7 @@ app.get("/me", (req, res) => {
   res.send(momentt);
 });
 
-const port = 5000;
+const port = process.env.PORT || 80;
 
 app.listen(port, () => {
   console.log(`server is running on port ${port}`);
